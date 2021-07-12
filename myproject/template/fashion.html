@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Title Tag  -->
+    <title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header shop">
+	<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/cl.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+					<!-- Logo -->
+					<div class="logo">
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; top: 0px;left:250px;width:95px;height:80px;">
+					</div>
+				<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="position: absolute;top: 18px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;"><i class="fa fa-user-circle-o" style="font-size:48px;color:blue;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:blue;"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<!-- Header Inner -->
+	<div class="header-inner" style="background:#000536;">
+		<div class="container">
+			<div class="cat-nav-head">
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area">
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg">
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav">
+											<li><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a></li>
+											<li  class="active"><a href="">Clothing<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href="">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--/ End Header Inner -->
+<!--/ Body -->
+<div style="background-image:url('{% static 'images/cl.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+<br>
+<!--/Card One  -->
+<div class="row">
+	<div class="column">
+		<div class="card">
+			<center><img src="{% static 'images/levi.png' %}"width="200px" height="310px"></center>
+			<h5 style="color:darkmagenta;">Levi's Men's Casual Shirt</h5>
+			<h4 style="color:green;"><b>Price: ₹ 2,599.00</b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="Levi'sMen'sCasualShirt" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity" style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t1 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card">
+			<center><img src="{% static 'images/kr.png' %}"width="180px" height="310px"></center>
+			<h5 style="color:darkmagenta;">Max cotton Kurta</h5>
+			<h4 style="color:green;"><b>Price: ₹ 412.00</b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="MaxcottonnKurta" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t2 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card">
+			<center><img src="{% static 'images/kd.png' %}"width="200px" height="310px"></center>
+			<h5 style="color:darkmagenta;">Clobay Dungaree </h5>
+			<h4 style="color:green;"><b>Price: ₹ 725.00 </b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="ClobayDungaree" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t3 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+		<div class="card" >
+			<center><img src="{% static 'images/boy.png' %}"width="200px" height="310px"></center>
+			<h5 style="color:darkmagenta;">AJ DEZINES</h5>
+			<h4 style="color:green;"><b>Price:  ₹ 1,169.00</b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="AJDEZINES" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t4 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<br>
+<!--/ End card one -->
+<!--/ Carousel -->
+<div>
+	<div class="container">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<center>
+					<div class="carousel-item active">
+						<img src="{% static 'images/clt1.png' %}" style="width:1000px;height:300px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/cl2.png' %}" style="width:1000px;height:300px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/clt2.png' %}" style="width:1000px;height:300px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/clt3.png' %}" style="width:1000px;height:300px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/clt4.png' %}" style="width:1000px;height:300px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/new.png' %}" style="width:1000px;height:300px;">
+					</div>
+				</center>
+			</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+</div>
+<!--/ End Carousel -->
+<br>
+<!--/Card Two  -->
+<div class="row">
+	<div class="column">
+		<div class="card">
+			<center><img src="{% static 'images/th.png' %}"width="200px" height="310px"></center>
+			<h5 style="color:darkmagenta;">BLIVE Kid's T-Shirt</h5>
+			<h4 style="color:green;"><b>Price: ₹ 419.00</b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="BLIVEKid'sHenleyT-Shirt" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity" style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t5 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card">
+			<center><img src="{% static 'images/lev.png' %}"width="180px" height="310px"></center>
+			<h5 style="color:darkmagenta;">Levi's Women's Shirt</h5>
+			<h4 style="color:green;"><b>Price: ₹ 1,433.00 </b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="Levi'sWomen'sShirt" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t6 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card">
+			<center><img src="{% static 'images/den.png' %}"width="200px" height="310px"></center>
+			<h5 style="color:darkmagenta;">Dennis Lingo Men's Shirt</h5>
+			<h4 style="color:green;"><b>Price: ₹ 749.00 </b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="DennisLingoMenn'sShirt" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t7 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="background-color:gary;backdrop-filter: blur(5px);">
+			<center><img src="{% static 'images/q.png' %}"width="200px" height="310px"></center>
+			<h5 style="color:darkmagenta;">CUPIDVIBE Girls Dress</h5>
+			<h4 style="color:green;"><b>Price:  ₹ 716.00 </b></h4><br>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="dress" name="dress" value="CUPIDVIBEGirlsDress" style="margin-left:30px;width:35px;height:18px;">
+					<label for="dress">  Quantity   :</label>
+					<input type="number" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t8 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<br>
+<!--/ End card two -->
+
+<!--/ Carousel -->
+<div>
+	<div class="container">
+		<div id="demo1" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<center>
+					<div class="carousel-item active">
+						<img src="{% static 'images/tammu.jpg' %}" style="width:600px;height:500px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/men.jpg' %}" style="width:600px;height:500px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/gou.jpg' %}" style="width:600px;height:500px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/hd.jpg' %}" style="width:500px;height:500px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/kiddo.jpg' %}" style="width:600px;height:500px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/denn.jpg' %}" style="width:600px;height:500px;">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/all.jpg' %}" style="width:600px;height:500px;">
+					</div>
+				</center>
+			</div>
+			<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo1" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+</div>
+<!--/ End Carousel -->
+
+
+<br>
+<!--/ End Body -->
+<hr style="background-color:black;height:2px;">
+<!-- Footer Top -->
+<footer class="footer" style="color:white;">
+	<div class="footer-top section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer about">
+						<div class="logo">
+							<img src="{% static 'images/log.jpg' %}" alt="#" width="300px" height="80px">
+						</div><br><br>
+						<p class="call">Got Question?  Call us 24/7 <span><a href="tel:123456789"> +0123 456 789</a></span></p>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4>Information</h4>
+						<a href="#">About Us</a>
+						<a href="#">Faq</a>
+						<a href="#">Terms & Conditions</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Help</a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4>Customer Service</h4>
+						<a href="#">Payment Methods</a>
+						<a href="#">Money-back</a>
+						<a href="#">Returns</a>
+						<a href="#">Shipping</a>
+						<a href="#">Privacy Policy</a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer social">
+						<h4>Get In Touch</h4>
+						<!-- Single Widget -->
+						<div class="contact">
+							Kozhikode.
+							Kerala,India
+							info@tierraeshop.com<br>
+							+911 2345 6789
+						</div>
+						<!-- End Single Widget -->
+						<a href="#"><i class="ti-facebook"></i></a>
+						<a href="#" ><i style="text-indent:3em;" class="ti-twitter"></i></a>
+						<a href="#"><i class="ti-instagram"></i></a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Top -->
+	<div class="copyright">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="left">
+							<p>Copyright © 2020 <a href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="right">
+							<img src="{% static 'images/payments.png' %}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>

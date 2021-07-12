@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Title Tag  -->
+    <title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/addrss.css' %}">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header shop">
+	<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/map.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+					<!-- Logo -->
+					<div class="logo">
+						<br>
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; top: 0px;left:250px;width:95px;height:80px;">
+					</div>
+					<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="position: absolute; top: 18px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;"><i class="fa fa-user-circle-o" style="font-size:48px;color:#00154d;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:#00154d"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br>
+	</div>
+	<!-- Header Inner -->
+	<div class="header-inner" style="background:#000536;">
+		<div class="container">
+			<div class="cat-nav-head">
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area">
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg">
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav">
+											<li ><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a>
+											</li>
+											<li><a href="">Clothing<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href="">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--/ End Header Inner -->
+<div style="background-image:url('{% static 'images/map.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;"><br>
+	<center><h3 style="color:deeppink;text-shadow: 2px 2px black;"><b>Total price is : {{ total_price }} </b></h3>
+	<div class="card" style="background:powderblue;height:50px;width:495px;"><h2 style="color:black;">Enter A Shipping Address</h2></div></center><br>
+	<form role="form" method="POST" enctype="multipart/form-data"style="max-width:500px;margin:auto">
+		{% csrf_token %}
+		<div class="input-container">
+			<i class="fa fa-user icon"></i>
+			<input class="input-field" type="text" placeholder="Full name" name="usrnm" required>
+		</div>
+		<div class="input-container">
+			<i class="fa fa-mobile-phone icon"></i>
+			<input class="input-field" type="tel" placeholder="Mobile number" name="mobile" required>
+		</div>
+		<div class="input-container">
+			<i class="fa fa-map-marker icon"></i>
+			<input class="input-field" type="number" placeholder="PIN code" name="pin" required>
+		</div>
+		<div class="input-container">
+			<i class="fa fa-home icon"></i>
+			<input class="input-field" type="text" required placeholder="Flat,House no.,Building,Company" name="flat">
+		</div>
+		<div class="input-container ">
+			<i class="fa fa-map-marker icon"></i>
+			<input class="input-field" type="text" placeholder="Area,Colony,Street,Sector,Village" name="area" required>
+		</div>
+		<div class="input-container">
+			<i class="fa fa-institution icon"></i>
+			<input class="input-field" type="text" placeholder="Landmark e.g near Apollo Hospital" name="land" required>
+		</div>
+		<div class="input-container">
+			<i class="fa fa-map-marker icon"></i>
+			<input class="input-field" type="text" placeholder="Town/City" name="town" required>
+		</div><div>
+		<select style="background:powderblue;color:black;width:500px;height:50px;font-size:25px;" required>
+			<option >Select State</option>
+			<option >Andhra Pradesh</option>
+			<option >Andaman and Nicobar Islands</option>
+			<option >Arunachal Pradesh</option>
+			<option >Assam</option>
+			<option >Bihar</option>
+			<option >Chandigarh</option>
+			<option >Chhattisgarh</option>
+			<option >Dadar and Nagar Haveli</option>
+			<option >Daman and Diu</option>
+			<option >Delhi</option>
+			<option >Lakshadweep</option>
+			<option >Puducherry</option>
+			<option >Goa</option>
+			<option >Gujarat</option>
+			<option >Haryana</option>
+			<option >Himachal Pradesh</option>
+			<option >Jammu and Kashmir</option>
+			<option >Jharkhand</option>
+			<option >Karnataka</option>
+			<option >Kerala</option>
+			<option >Madhya Pradesh</option>
+			<option >Maharashtra</option>
+			<option >Manipur</option>
+			<option >Meghalaya</option>
+			<option >Mizoram</option>
+			<option >Nagaland</option>
+			<option >Odisha</option>
+			<option >Punjab</option>
+			<option >Rajasthan</option>
+			<option >Sikkim</option>
+			<option >Tamil Nadu</option>
+			<option >Telangana</option>
+			<option >Tripura</option>
+			<option >Uttar Pradesh</option>
+			<option >Uttarakhand</option>
+			<option >West Bengal</option>
+		</select>
+	</div>
+		<br>
+		<div class="card" style="background:powderblue;">
+			<h3 style="color:black;"><b>Delivery Instruction</b></h3>
+			<p style="color:black;text-align:justify;">Preference are used to implement to plan your delivery.However,shipments can sometimes arrive early or later than planned.</p>
+		</div><br>
+		<div>
+			<select style="background:powderblue;color:black;width:500px;height:50px;font-size:25px;" required>
+				<option><b>Select an Address Type</b></option>
+				<option>Home(7am - 9pm delivery)</option>
+				<option>Office/Commercial(10am - 6pm delivery)</option>
+			</select>
+		</div>
+		<br>
+		<button type="submit" class="btn"><h2><b>Continue</b></h2></button>
+	</form>
+	<br>
+<!-- Body End -->
+<hr style="background-color:black;height:2px;">
+<!-- Footer Top -->
+<footer class="footer" style="font-size:20px;color:black;">
+		<div class="footer-top section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer about">
+							<div class="logo">
+								<img src="{% static 'images/log.jpg' %}" alt="#" width="300px" height="80px"></a>
+							</div><br>
+							<p class="call">Got Question?  Call us 24/7 <span><a style="color:black;" href="tel:123456789"> +0123 456 789</a></span></p>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Information</h4>
+							<a href="#" style="color:black;">About Us</a>
+							<a href="#" style="color:black;">Faq</a>
+							<a href="#" style="color:black;">Terms & Conditions</a>
+							<a href="#" style="color:black;">Contact Us</a>
+							<a href="#" style="color:black;">Help</a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Customer Service</h4>
+								<a href="#" style="color:black;">Payment Methods</a>
+								<a href="#" style="color:black;">Money-back</a>
+								<a href="#" style="color:black;">Returns</a>
+								<a href="#" style="color:black;">Shipping</a>
+								<a href="#" style="color:black;">Privacy Policy</a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer social">
+							<h4>Get In Touch</h4>
+							<!-- Single Widget -->
+							<div class="contact">
+								Kozhikode.
+								Kerala,India
+								info@tierraeshop.com<br>
+								+911 2345 6789
+							</div>
+							<!-- End Single Widget -->
+							<a href="#" style="color:red;"><i class="ti-facebook"></i></a>
+							<a href="#" style="color:red;"><i style="text-indent:3em;" class="ti-twitter"></i></a>
+							<a href="#" style="color:red;"><i class="ti-instagram"></i></a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Top -->
+			<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="left">
+								<p>Copyright © 2020 <a style="color:lavender;"href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="right">
+								<img src="{% static 'images/payments.png' %}" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

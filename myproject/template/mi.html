@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<!-- Title Tag  -->
+    <title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static 'css/flip.css' %}">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+<!-- Header -->
+<header class="header shop" >
+	<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/mw.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+					<!-- Logo -->
+					<div class="logo">
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; top: 0px;left:250px;width:95px;height:80px;">
+					</div>
+				<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="  text-shadow: 3px 3px 3px #ababab;position: absolute; top: 18px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;"><i class="fa fa-user-circle-o" style="font-size:48px;color:navy;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:navy;"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<!-- Header Inner -->
+	<div class="header-inner" style="background:#000536;">
+		<div class="container">
+			<div class="cat-nav-head" >
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area" >
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg" >
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav">
+											<li ><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li class="active"><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a>
+											</li>
+											<li><a href="">Clothing<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href="">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+
+<!--/ Body -->
+<div style="background-image:url('{% static 'images/mw.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+	<center><br>
+		<h2 style="color:#4c0120;text-shadow: 1px 1px black;"><b><i>Buy Your Dream SmartPhone Now &#10084;</i></b></h2>
+	</center>
+	<hr color="black">
+<!-- Card one -->
+	<div class="row">
+		<div class="column" >
+			<div class="card" style="height:550px;">
+				<div class="flip-card" >
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img src="{% static 'images/mi.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="background:white;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 16.94 cm (6.67 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">108MP Quad Camera|120Hz Super Amoled Display.</p>
+								<p style="color:midnightblue;">Battery: 5020 mAH large battery with 33W fast charger in-box and Type-C connectivity.</p>
+								<p style="color:midnightblue;">Qualcomm Snapdragon 732G with Kryo 470 Octa-core; 8nm process; Up to 2.3GHz clock speed.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Redmi Note 10 Pro Max</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 22,943</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="mi" name="mi" value="RedmiNote10ProMax" style="margin-left:30px;width:35px;height:18px;">
+						<label for="mi">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t1 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img src="{% static 'images/mi10.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+							<b><p style="color:midnightblue;">8GB RAM, 128GB Storage 16.9 centimeters (6.67-inch) FHD display.</p>
+								<p style="color:midnightblue;">64MP triple rear camera with 13MP ,20MP front camera.</p>
+								<p style="color:midnightblue;">5000mAH lithium-polymer large battery with 33W fast charger in-box and type-C connectivity.</p>
+								<p style="color:midnightblue;">2.84GHz clock speed Qualcomm Snapdragon 865 octa core processor with 7nm process.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Mi 10T </b></h5>
+				<h4 style="color:#008000;"><b>Price: ₹ 34,999</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="mi" name="mi" value="Mi10T" style="margin-left:30px;width:35px;height:18px;">
+						<label for="mi">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t2 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/mi1.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 16.94 cm (6.67 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">64MP rear camera with ultra-wide,32MP front camera.</p>
+								<p style="color:midnightblue;">5020mAH lithium-polymer large battery with 33W fast charger in-box and Type-C connectivity.</p>
+								<p style="color:midnightblue;">2.3GHz Qualcomm Snapdragon 720G with 8nm octa core processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Redmi Note 9 Pro Max</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 22,995 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="mi" name="mi" value="RedmiNote9ProMax" style="margin-left:30px;width:35px;height:18px;">
+						<label for="mi">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t3 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+			<div class="card" style="height:550px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/mi2.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 4.7-inch Retina HD display.</p>
+								<p style="color:midnightblue;">48MP quad rear camera with ultra-wide,13 front camera.</p>
+								<p style="color:midnightblue;">5020mAH large lithium-polymer battery with 22.5W fast charger in-box.</p>
+								<p style="color:midnightblue;">2.0GHz Mediatek Helio G85 octa core processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Redmi Note 9</b></h5>
+				<h4 style="color:green;"><b>Price:  ₹ 13,218 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="mi" name="mi" value="RedmiNote9" style="margin-left:30px;width:35px;height:18px;">
+						<label for="mi">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity" style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t4 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+<!-- Card One End-->
+
+<!-- Card 2 -->
+<div class="row">
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi3.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 16.0 cm (6.3 inch) Full HD+ Display.</p>
+							<p style="color:midnightblue;">48MP AI Quad camera with 13MP front camera.</p>
+							<p style="color:midnightblue;">4000mAH large lithium-polymer battery with 22.5W fast charger in-box.</p>
+							<p style="color:midnightblue;"> 2.0GHz Qualcomm Snapdragon 665 octa core processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi Note 8</b></h5>
+			<h4 style="color:green;"><b>Price:	₹ 12,495</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="mi" name="mi" value="RedmiNote8" style="margin-left:30px;width:35px;height:18px;">
+					<label for="mi">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t5 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi4.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 16.59 cm (6.53 inch) Full HD+ Display.</p>
+							<p style="color:midnightblue;">13MP Rear Camera | 5MP Front Camera.</p>
+							<p style="color:midnightblue;">5000 mAh Lithium Polymer Battery.</p>
+							<p style="color:midnightblue;">MediaTek Helio G25 Processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 9i </b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 7,999</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="mi" name="mi" value="Redmi9i" style="margin-left:30px;width:35px;height:18px;">
+					<label for="mi">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t6 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi5.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 11.94 cm (4.7 inch) Retina HD Display.</p>
+							<p style="color:midnightblue;">48MP quad rear camera | 8MP front camera.</p>
+							<p style="color:midnightblue;">6000mAH large lithium-polymer battery 18W charging support.</p>
+							<p style="color:midnightblue;">2.0GHz clock speed Qualcomm Snapdragon 662 octa core processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 9 Power </b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 10,499 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="mi" name="mi" value="Redmi9Power" style="margin-left:30px;width:35px;height:18px;">
+					<label for="mi">  Quantity   :</label>
+					<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t7 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi7.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 15.5 cm (6.102 inch) Display.</p>
+							<p style="color:midnightblue;">12MP + 2MP | 8MP Front Camera.</p>
+							<p style="color:midnightblue;">5000 mAh Battery.</p>
+							<p style="color:midnightblue;">Qualcomm Snapdragon 439 Processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 8</b></h5>
+			<h4 style="color:green;"><b>Price:  ₹ 10,999 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+				<input type="checkbox" id="mi" name="mi" value="Redmi8" style="margin-left:30px;width:35px;height:18px;">
+				<label for="mi">  Quantity   :</label>
+				<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t8 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<br>
+<!-- Card 2 end -->
+
+<!-- Card 3 -->
+<div class="row">
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi8.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">3 GB RAM | 32 GB ROM |15.8 cm (6.22 inch) HD+ Display .</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 8MP Front Camera.</p>
+							<p style="color:midnightblue;">5000 mAh Battery.</p>
+							<p style="color:midnightblue;">Qualcomm Snapdragon 439 Processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 8A Dual</b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 6,999</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="mi" name="mi" value="Redmi8ADual" style="margin-left:30px;width:35px;height:18px;">
+					<label for="mi">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t9 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi8a.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">32GB Storage 13.94 cm (5.488 inch) Retina HD Display.</p>
+							<p style="color:midnightblue;">13+2MP dual rear AI camera | 8MP front camera.</p>
+							<p style="color:midnightblue;">5000mAH lithium-polymer battery .</p>
+							<p style="color:midnightblue;">1.95GHz Snapdragon 439 octa core processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 8A</b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 7,999</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+				<input type="checkbox" id="mi" name="mi" value="Redmi8A" style="margin-left:30px;width:35px;height:18px;">
+				<label for="mi">  Quantity   :</label>
+				<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t10 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi9p.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 16.59 cm (6.53 inch) Full HD+ Display.</p>
+							<p style="color:midnightblue;">13MP quad rear camera | 8 MP front camera.</p>
+							<p style="color:midnightblue;">5020 mAh large lithium-polymer battery.</p>
+							<p style="color:midnightblue;">2.0 GHz Mediatek Helio G80 octa core processor.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 9 Prime </b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 10,882 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="mi" name="mi" value="Redmi9Prime" style="margin-left:30px;width:35px;height:18px;">
+					<label for="mi">  Quantity   :</label>
+					<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t11 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+		<div class="card" style="height:550px;">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img  src="{% static 'images/mi99.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="margin-left:6px;height:290px;background:white;"><br>
+						<b><p style="color:midnightblue;">128 GB Storage 13.97 cm (5.5 inch) HD Display.</p>
+							<p style="color:midnightblue;">13+2MP Rear camera | 5MP front facing camera .</p>
+							<p style="color:midnightblue;">5000 mAh large lithium-polymer battery.</p>
+							<p style="color:midnightblue;">2.3GHz Mediatek Helio G35 octa core processor .</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Redmi 9 </b></h5>
+			<h4 style="color:green;"><b>Price:  ₹ 10,237 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="mi" name="mi" value="Redmi9" style="margin-left:30px;width:35px;height:18px;">
+					<label for="mi">  Quantity   :</label>
+					<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t12 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Card 3 end -->
+<hr style="background-color:black;">
+<!-- Footer Start -->
+<footer class="footer">
+	<!-- Footer Top -->
+	<div class="footer-top section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer about">
+						<div class="logo">
+							<img src="{% static 'images/log.jpg' %}" alt="#" width="350px" height="80px">
+						</div><br><br>
+						<p class="call" style="color:black;">Got Question?  Call us 24/7 <span><a href="tel:123456789" style="color:black;"> +0123 456 789</a></span></p>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4 style="color:black;">Information</h4>
+							<a href="#" style="color:red;">About Us</a>
+							<a href="#" style="color:red;" >Faq</a>
+							<a href="#" style="color:red;" >Terms & Conditions</a>
+							<a href="#" style="color:red;">Contact Us</a>
+							<a href="#"style="color:red;" >Help</a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4 style="color:black;">Customer Service</h4>
+							<a href="#" style="color:red;">Payment Methods</a>
+							<a href="#" style="color:red;">Money-back</a>
+							<a href="#" style="color:red;">Returns</a>
+							<a href="#" style="color:red;" >Shipping</a>
+							<a href="#" style="color:red;" >Privacy Policy</a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer social">
+							<h4 style="color:black;">Get In Touch</h4>
+							<!-- Single Widget -->
+							<div class="contact" style="color:black;">
+								Kozhikode.
+								Kerala,India
+								info@tierraeshop.com<br>
+								+911 2345 6789
+							</div>
+							<!-- End Single Widget -->
+							<a href="#" style="color:darkmagenta;"><i class="ti-facebook"></i></a>
+								<a href="#" style="color:darkmagenta;" ><i class="ti-twitter"></i></a>
+								<a href="#" style="color:darkmagenta;"><i class="ti-instagram"></i></a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Top -->
+	<div class="copyright">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="left">
+							<p style="color:black;">Copyright © 2020 <a href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="right">
+							<img src="{% static 'images/payments.png' %}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>

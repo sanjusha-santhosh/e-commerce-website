@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<!-- Title Tag  -->
+    <title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- flipcard -->
+	<link rel="stylesheet" href="{% static 'css/flip.css' %}">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header shop" >
+	<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/iph.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+					<!-- Logo -->
+					<div class="logo">
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; top: 0px;left:250px;width:95px;height:80px;">
+					</div>
+					<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="position: absolute; top: 18px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;"><i class="fa fa-user-circle-o" style="font-size:48px;color:lightseagreen;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:lightseagreen;"></i></a>
+						</div>
+						<!--/ End Shopping Item -->
+					</div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+<!-- Header Inner -->
+	<div class="header-inner" style="background:#000536;" >
+		<div class="container">
+			<div class="cat-nav-head" >
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area" >
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg" >
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav">
+											<li ><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li class="active"><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a>
+											</li>
+											<li><a href="">Fashion<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href="">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+
+<!--/ Body -->
+<div style="background-image:url('{% static 'images/iph.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+	<center><br>
+		<h2 style="color:hotpink;text-shadow: 2px 2px black;"><b><i>Buy Your Dream iPhone Now &#10084;</i></b></h2>
+	</center>
+	<hr color="white">
+<!-- Card one -->
+	<div class="row">
+		<div class="column">
+			<div class="card" style="height:550px;">
+				<div class="flip-card" >
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img src="{% static 'images/iphn1.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 17 cm (6.7 inch) Diagonal.</p>
+								<p style="color:midnightblue;">12MP TrueDepth front camera, Pro 12MP camera system.</p>
+								<p style="color:midnightblue;">Qi wireless chargers.</p>
+								<p style="color:midnightblue;">A14 Bionic chip with next-generation Neural Engine	.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Apple iPhone 12 Pro Max </b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 1,24,704.00</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="iphone" name="iphone" value="AppleiPhone12ProMax" style="margin-left:30px;width:35px;height:18px;">
+						<label for="iphone">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t1 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;">
+				<div class="flip-card" >
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img src="{% static 'images/iphnx.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+							<b><p style="color:midnightblue;">256GB Storage 5.8-inch Super Retina display (OLED).</p>
+								<p style="color:midnightblue;">12MP + 12MP | 7MP Front Camera.</p>
+								<p style="color:midnightblue;">iOS 13 Compatible .</p>
+								<p style="color:midnightblue;">Embedded M11 Motion Coprocessor Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Apple iPhone X </b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 69,999.00</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="iphone" name="iphone" value="AppleiPhoneX" style="margin-left:30px;width:35px;height:18px;">
+						<label for="iphone">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t2 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;">
+				<div class="flip-card" >
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img src="{% static 'images/iphn11.2.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 6.1-inch (15.5 cm diagonal).</p>
+								<p style="color:midnightblue;">12MP + 12MP | 12MP Front Camera.</p>
+								<p style="color:midnightblue;">A13 Bionic Chip Processor.</p>
+								<p style="color:midnightblue;">iOS 14.2.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Apple iPhone 11</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 57,504.00 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="iphone" name="iphone" style="margin-left:30px;width:35px;height:18px;" value="AppleiPhone11">
+							<label for="iphone">  Quantity   :</label>
+							<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+						</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t3 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;">
+				<div class="flip-card" >
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img src="{% static 'images/iphn8.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+							<b><p style="color:midnightblue;">256GB Storage 4.7-inch Retina HD display.</p>
+								<p style="color:midnightblue;">12MP Rear Camera | 7MP Front Camera.</p>
+								<p style="color:midnightblue;">A11 Bionic Chip Processor.</p>
+								<p style="color:midnightblue;">iOS 12.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>Apple iPhone 8 </b></h5>
+				<h4 style="color:green;"><b>Price:  ₹ 42,467.00 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="iphone" name="iphone" value="AppleiPhone8" style="margin-left:30px;width:35px;height:18px;">
+						<label for="iphone">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t4 }}</b></div>
+					<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+<!-- Card One End-->
+
+<!-- Card 2 -->
+<div class="row">
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/mini.png' %}" class="center" alt="Avatar" width="250px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 5.4-inch (13.7 cm diagonal) Super Retina XDR display.</p>
+							<p style="color:midnightblue;">12MP + 12MP | 12MP Front Camera.</p>
+							<p style="color:midnightblue;">A14 Bionic Chip with Next Generation Neural Engine Processor.</p>
+							<p style="color:midnightblue;">iOS 14.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Apple iPhone 12 Mini</b>
+			</h5><h4 style="color:green;"><b>Price:	₹ 67,100.00</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" name="iphone" id="iphone" value="AppleiPhone12Mini" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t5 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/171.png' %}" class="center" alt="Avatar" width="220px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">128GB Storage 4.7-inch Retina HD LCD display.</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 7MP Front Camera.</p>
+							<p style="color:midnightblue;">Apple A10 Fusion 64-bit processor and Embedded M10 Motion Co-processor.</p>
+							<p style="color:midnightblue;">iOS 13 Compatible.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Apple iPhone 7 </b> </h5>
+			<h4 style="color:green;"><b>Price: ₹ 29,999.00</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhone7" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t6 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/se.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">128GB Storage 11.94 cm (4.7 inch) Retina HD Display.</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 7MP Front Camera.</p>
+							<p style="color:midnightblue;">A13 Bionic Chip with 3rd Gen Neural Engine Processor.</p>
+							<p style="color:midnightblue;">iOS 14.2 .</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>APPLE iPhone SE </b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 34,999 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhoneSE" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t7 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/xr.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 15.5 cm (6.102 inch) Display.</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 7MP Front Camera.</p>
+							<p style="color:midnightblue;">A12 Bionic Chip Processor.</p>
+							<p style="color:midnightblue;">iOS 13 Compatible.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>Apple iPhone XR</b></h5>
+			<h4 style="color:green;"><b>Price:  ₹ 38,999 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhoneXRs" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t8 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<br>
+<!-- Card 2 end -->
+
+<!-- Card 3 -->
+<div class="row">
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/iphnx.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">512 GB Storage 16.51 cm (6.5 inch) Super Retina HD Display.</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 7MP Front Camera.</p>
+							<p style="color:midnightblue;">A12 Bionic Chip Processor .</p>
+							<p style="color:midnightblue;">iOS 13 Compatible.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>APPLE iPhone XS Max</b> </h5>
+			<h4 style="color:green;"><b>Price: ₹ 1,44,900</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhoneXSMax" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t9 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/7p.png' %}" class="center" alt="Avatar" width="180px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">32GB Storage 13.94 cm (5.488 inch) Retina HD Display.</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 7MP Front Camera.</p>
+							<p style="color:midnightblue;">A11 Bionic Chip Processor .</p>
+							<p style="color:midnightblue;">iOS 12 .</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>APPLE iPhone 7 Plus </b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 37,900</b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhone7Plus" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+						</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t10 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/11p.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">64GB Storage 14.73 cm (5.8 inch) Super Retina XDR Display.</p>
+							<p style="color:midnightblue;">12MP + 12MP + 12MP | 12MP Front Camera.</p>
+							<p style="color:midnightblue;">A13 Bionic Chip Processor .</p>
+							<p style="color:midnightblue;">iOS 14 .</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>APPLE iPhone 11 Pro</b></h5>
+			<h4 style="color:green;"><b>Price: ₹ 79,999 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhone11Pro" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t11 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+		<div class="card" style="height:550px;">
+			<div class="flip-card" >
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<center>
+							<img src="{% static 'images/6p.png' %}" class="center" alt="Avatar" width="200px" height="310px">
+						</center>
+					</div>
+					<div class="flip-card-back" style="background:white;margin-left:7px;"><br>
+						<b><p style="color:midnightblue;">16GB Storage 13.97 cm (5.5 inch) Retina HD Display.</p>
+							<p style="color:midnightblue;">12MP Rear Camera | 5MP Front Camera .</p>
+							<p style="color:midnightblue;">Apple A9 64-bit processor and Embedded M9 Motion Co-processor .</p>
+							<p style="color:midnightblue;">iOS 9.</p>
+						</b>
+					</div>
+				</div>
+			</div>
+			<h5 style="color:darkmagenta;"><b>APPLE iPhone 6s Plus</b> </h5>
+			<h4 style="color:green;"><b>Price:  ₹ 49,999 </b></h4>
+			<form role="form" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="row">
+					<input type="checkbox" id="iphone" name="iphone" value="AppleiPhone6sPlus" style="margin-left:30px;width:35px;height:18px;">
+					<label for="iphone">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t12 }}</b></div>
+				<button class="btn" name="b" value="cart" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Card 3 end -->
+
+<!-- Footer Start -->
+<hr style="background-color:white;">
+<footer class="footer">
+		<!-- Footer Top -->
+		<div class="footer-top section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer about">
+							<div class="logo">
+								<a href="index.html"><img src="{% static 'images/log.jpg' %}" alt="#" width="230px"></a>
+							</div><br><br>
+							<p class="call" style="color:white;">Got Question?  Call us 24/7 <span><a href="tel:123456789" style="color:white;"> +0123 456 789</a></span></p>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4 style="color:white;">Information</h4>
+							<a href="#" >About Us</a>
+							<a href="#" >Faq</a>
+							<a href="#" >Terms & Conditions</a>
+							<a href="#" >Contact Us</a>
+							<a href="#" >Help</a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4 style="color:white;">Customer Service</h4>
+								<a href="#" >Payment Methods</a>
+								<a href="#" >Money-back</a>
+								<a href="#" >Returns</a>
+								<a href="#" >Shipping</a>
+								<a href="#" >Privacy Policy</a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer social">
+							<h4 style="color:white;">Get In Tuch</h4>
+							<!-- Single Widget -->
+							<div class="contact" style="color:white;">
+								Kozhikode.
+								Kerala,India
+								info@tierraeshop.com<br>
+								+911 2345 6789
+							</div>
+							<!-- End Single Widget -->
+							<a href="#"  style="color:red;"><i class="ti-facebook"></i></a>
+								<a href="#" style="color:red;" ><i style="text-indent:3em;" class="ti-twitter"></i></a>
+								<a href="#" style="color:red;"><i class="ti-instagram"></i></a>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Top -->
+			<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="left">
+								<p style="color:white;">Copyright © 2020 <a href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="right">
+								<img src="{% static 'images/payments.png' %}" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

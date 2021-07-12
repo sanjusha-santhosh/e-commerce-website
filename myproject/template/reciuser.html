@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    {% load static %}
+    <title>Tierra EShop</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+    <link href="{% static '/css/user.css' %}" rel="stylesheet">
+    <link href="{% static '/css/reci.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Tierra Eshop</title>
+</head>
+<body style="background-image:url('{% static 'images/ne.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+<h1 style="text-shadow: 2px 2px black;color:deeppink;font-size:60px;font-family:Sofia,sans-serif;margin-top: 10px;margin-left: 20px;"><b>New User Created Successfully</b></h1>
+<div style="color:#000329;font-size:25px;padding-left:25px;">
+    <form method="POST" class="post-form">
+       <b>{% csrf_token %}
+           {{ form.as_p }}</b>
+    </form>
+    <form class="post-form" action="http://127.0.0.1:8000/">
+        {% csrf_token %}
+        <button type="submit" class="btn">Create</button><br><br>
+    </form>
+</div>
+</body>
+</html>

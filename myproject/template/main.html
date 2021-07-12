@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Title Tag  -->
+    <title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header shop">
+<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/crr.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+				<!-- Logo -->
+					<div class="logo">
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; top: 0px;left:250px;width:95px;height:80px;">
+					</div>
+				<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="position: absolute; top: 18px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;"><i class="fa fa-user-circle-o" style="font-size:48px;color:#00154d;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:#00154d"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<!-- Header Inner -->
+	<div class="header-inner" style="background-color:#000536;">
+		<div class="container">
+			<div class="cat-nav-head">
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area">
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg">
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav" >
+											<li class="active"><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a></li>
+											<li><a href=" ">Clothing<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href="">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+<!--/ Carousel -->
+<div style="background-image:url('{% static 'images/crr.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+	<div>
+		<div class="container">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<center>
+						<div class="carousel-item active">
+							<a href="http://127.0.0.1:8000/mobile/">
+								<img src="{% static 'images/ipn2.jpg' %}" style="width:900px;">
+							</a>
+						</div>
+					<div class="carousel-item">
+						<a href="http://127.0.0.1:8000/main/">
+							<img src="{% static 'images/drs2.jpg' %}" style="width:1050px;height:500px;">
+						</a>
+					</div>
+						<div class="carousel-item">
+							<a href="http://127.0.0.1:8000/app/">
+								<img src="{% static 'images/hmap.jpg' %}" style="width:970px;height:500px;">
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="http://127.0.0.1:8000/elec/">
+								<img src="{% static 'images/lap.jpg' %}" style="width:870px;height:500px;">
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="http://127.0.0.1:8000/elec/">
+								<img src="{% static 'images/headset.jpg' %}" style="width:700px;height:500px;">
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="http://127.0.0.1:8000/elec/">
+								<img src="{% static 'images/watch3.jpg' %}" style="width:870px;height:500px;">
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="http://127.0.0.1:8000/mobile/">
+								<img src="{% static 'images/ph.jpg' %}" style="width:870px;height:500px;">
+							</a>
+						</div>
+					</center>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+<!--/ End Carousel -->
+
+<!--/ Start Offer zone body  -->
+<div>
+	<hr style="background-color:black;height:2px;">
+	<center>
+		<h2 style="color:fuchsia;text-shadow: 2px 2px black;"><b>Offer Zone</b></h2>
+		<hr style="background-color:black;height:3px;">
+    </center><br>
+</div>
+<div class="row">
+        <div class="col-sm-3">
+            <div class="cards">
+                <div class="cardd-body">
+                    <blockquote class="card-blockquote">
+						<img src="{% static 'images/index.jpg' %}" width="300px">
+						<center>
+							<h3 style="color:purple;"><b>Earpods</b></h3>
+							<h3 style="color:green;"><b>₹409 <strike>₹1,499</strike></b></h3>
+                            <p style="color:white;"><b>Black, True Wireless</b></p>
+							<a href="http://127.0.0.1:8000/ofr/">
+								<button type="button" style="background-color:indigo;opacity: 0.9;border-radius: 12px;color: white;">View All Offers</button>
+							</a>
+						</center>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="cards">
+                <div class="cardd-body">
+                    <blockquote class="card-blockquote">
+						<img src="{% static 'images/pc.png' %}" width="300px" height="310px">
+						<center>
+							<h3 style="color:maroon;"><b>Poco</b></h3>
+							<h3 style="color:green;"><b><strike>₹26,999 </strike>To ₹14,900 </b></h3>
+							<p style="color:white;"><b>Up to ₹16,500 Off on Exchange</b></p>
+							<a href="http://127.0.0.1:8000/ofr/">
+								<button type="button" style="background-color:indigo;opacity: 0.9;border-radius: 12px;color: white;">View All Offers</button>
+							</a>
+						</center>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+			<div class="cards">
+                <div class="cardd-body">
+                    <blockquote class="card-blockquote">
+						<img src="{% static 'images/men.jpg' %}" width="300px" height="310px">
+						<center>
+							<h3 style="color:navy;"><b>Gents Wear</b></h3>
+							<h3 style="color:green;"><b>₹474 <strike>₹2,999</strike></b></h3>
+							<p style="color:white;"><b>Size S, M, L, XL, XXL</b></p>
+							<a href="http://127.0.0.1:8000/ofr/">
+								<button type="button" style="background-color:indigo;opacity: 0.9;border-radius: 12px;color: white;">View All Offers</button>
+							</a>
+						</center>
+					</blockquote>
+                </div>
+            </div>
+        </div>
+	<div class="col-sm-3">
+		<div class="cards">
+			<div class="cardd-body">
+				<blockquote class="card-blockquote">
+					<img src="{% static 'images/fo1.jpg' %}" width="290px" height="310px">
+					<center>
+						<h3 style="color:darkred;"><b>Fossil Chronograph</b></h3>
+						<h3 style="color:green;"><b>₹ 5,045.00 <strike>₹ 9,295.00 </strike></b></h3>
+						<p style="color:white;"><b>Men Watch FS4545</b></p>
+						<a href="http://127.0.0.1:8000/ofr/">
+							<button type="button" style="background-color:indigo;opacity: 0.9;border-radius: 12px;color: white;">View All Offers</button>
+						</a>
+					</center>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Offerzone end -->
+	<br>
+	<!-- Card one -->
+	<div class="row">
+		<div class="column">
+			<div class="card">
+			<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo9" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/kids2.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kids11.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kids4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kids10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kids6.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo9" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo9" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Kids Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/kids/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo1" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/ear3.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/ear2.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/ear4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/ear10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/ear11.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo1" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Earbuds Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/ear/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo2" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/wat1.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/wat12.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/wat4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/wat7.png' %}" width="180px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/wat9.png' %}" width="180px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo2" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo2" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Watch Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/wat/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+			<div class="card" >
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo3" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/men1.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/men12.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/men4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/men10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/men6.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo3" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo3" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Men's Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/men/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+	</div>
+	<br>
+<!-- Card One End-->
+	<br>
+<!-- Card Two -->
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+  				 <div>
+					<div class="container">
+						<div id="demo5" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/west1.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/west2.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/west4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/west10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/west6.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo5" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo5" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				 </div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Western Dress For Women</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/west/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo6" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/saree3.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/saree2.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/saree4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/saree10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/saree6.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo6" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo6" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Saree Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/saree/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo7" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/kurti1.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kurti12.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kurti4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kurti10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/kurti6.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo7" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo7" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Kurti Section</b></h4>
+			  	<center><br>
+					<a href="http://127.0.0.1:8000/kurt/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+			<div class="card" >
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo8" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/hd1.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/hd12.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/hd4.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/hd10.png' %}" width="200px" height="310px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/hd6.png' %}" width="200px" height="310px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo8" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo8" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Headset Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/hd/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+	</div>
+	<br>
+<!-- Card Two End-->
+	<br>
+<!-- Card Three -->
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo10" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/rf1.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/rf2.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/rf4.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/rf10.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/rf6.png' %}" width="200px" height="350px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo10" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo10" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Refrigerators Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/rf/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo11" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/11.png' %}" width="180px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/12.png' %}" width="230px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/6.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/110.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/19.png' %}" width="200px" height="350px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo11" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo11" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>OnePlus Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/one/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo12" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/mi1.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/mi2.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/mi4.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/mi10.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/mi8.png' %}" width="200px" height="350px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo12" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo12" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>Redmi Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/mi/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+		<div class="column"style="background-color:gary;backdrop-filter: blur(5px);">
+			<div class="card" >
+				<!--/ Carousel -->
+				<div>
+					<div class="container">
+						<div id="demo13" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<center>
+									<div class="carousel-item active">
+										<img src="{% static 'images/7p.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/171.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/iphn8.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/iphn11.2.png' %}" width="200px" height="350px">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/iphnx.png' %}" width="200px" height="350px">
+									</div>
+								</center>
+							</div>
+							<a class="carousel-control-prev" href="#demo13" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo13" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--/ End Carousel -->
+				<h4 style="color:navy;"><b>iPhone Section</b></h4>
+				<center><br>
+					<a href="http://127.0.0.1:8000/iphn/">
+						<button type="submit" style="background-color:hotpink;border-radius: 12px;width:100px;"><b>View</b></button>
+					</a>
+				</center><br>
+			</div>
+		</div>
+	</div>
+	<br>
+<!-- Card Three End-->
+
+<!-- Body end -->
+<hr style="background-color:white;height:4px;">
+<!-- Footer Top -->
+<footer class="footer" style="color:navy;">
+	<div class="footer-top section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer about">
+						<div class="logo">
+							<img src="{% static 'images/log.jpg' %}" alt="#" width="300px" height="80px">
+						</div><br><br>
+						<h5 class="call" ><b>Got Question?  Call us 24/7 <span><a href="tel:123456789" style="color:black;"> +0123 456 789</a></span></b></h5>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h3><b>Information</b></h3>
+						<a href="#"style="color:black;"><b>About Us</b></a>
+						<a href="#"style="color:black;"><b>Faq</b></a>
+						<a href="#"style="color:black;"><b>Terms & Conditions</b></a>
+						<a href="#"style="color:black;"><b>Contact Us</b></a>
+						<a href="#"style="color:black;"><b>Help</b></a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h3><b>Customer Service</b></h3>
+						<a href="#" style="color:black;"><b>Payment Methods</b></a>
+						<a href="#" style="color:black;"><b>Money-back</b></a>
+						<a href="#"style="color:black;"><b>Returns</b></a>
+						<a href="#"style="color:black;"><b>Shipping</b></a>
+						<a href="#"style="color:black;"><b>Privacy Policy</b></a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer social">
+						<h3><b>Get In Touch</b></h3>
+						<!-- Single Widget -->
+						<div class="contact" style="color:black;">
+							<b>
+								Kozhikode.
+								Kerala,India
+								info@tieraeshop.com<br>
+								+911 2345 6789
+							</b>
+						</div>
+						<!-- End Single Widget -->
+						<a href="#"><i class="ti-facebook"></i></a>
+						<a href="#" ><i style="text-indent:3em;" class="ti-twitter"></i></a>
+						<a href="#"><i class="ti-instagram"></i></a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- End Footer Top -->
+	<div class="copyright">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="left">
+							<p><b>Copyright © 2020 <a href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</b></p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="right">
+							<img src="{% static 'images/payments.png' %}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>

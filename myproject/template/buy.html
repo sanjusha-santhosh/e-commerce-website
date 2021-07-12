@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<!-- Title Tag  -->
+    <title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/buy.css' %}">
+	<script src="{% static '/js/buy.js' %}" type="text/javascript"></script>
+
+</head>
+<body>
+<!-- Header -->
+<header class="header shop">
+	<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/w.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+					<!-- Logo -->
+					<div class="logo">
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; margin-top: 0.01px;left:275px;width:95px;height:80px;">
+					</div>
+				<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="position: absolute; top: 36px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;"><i class="fa fa-user-circle-o" style="font-size:48px;color:#00154d;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:#00154d"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br><br>
+	</div>
+	<!-- Header Inner -->
+	<div class="header-inner" style="background-color:#000536;">
+		<div class="container">
+			<div class="cat-nav-head">
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area">
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg">
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav">
+											<li ><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a>
+											</li>
+											<li><a href="">Clothing<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href=" ">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--/ End Header Inner -->
+<!--/ Body -->
+<div style="background-image:url('{% static 'images/w.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+	<center>
+		<div class="card" style="background:plum;width:500px;">
+			<h1 style="color:navy;"><b>Payment Methods</b></h1>
+		</div>
+		<div class="card" style="background:pink;width:500px;">
+			<h3 style="color:#004d40;"><b>Total price is : {{ total_price }} </b></h3>
+		</div>
+	</center>
+	<div class="tab">
+		<button class="tablinks" onmouseover="openCity(event, 'credit')">Credit/Debit Cards</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Upi')">UPI</button>
+  		<button class="tablinks" onmouseover="openCity(event, 'Net')">NetBankig</button>
+  		<button class="tablinks" onmouseover="openCity(event, 'Cash')">Cash On Delivery</button>
+	</div>
+	<div id="credit" class="tabcontent" style="height:100%;background:powderblue;">
+		<div class="container">
+			<div class="col-50"><br>
+				<center>
+					<h2 style="color:#01579b;"><b>Payment</b></h2>
+				</center>
+				<h4>Accepted Cards</h4>
+				<div class="icon-container" style="font-size:48px;">
+					<i class="fa fa-cc-visa" style="color:navy;"></i>
+              		<i class="fa fa-cc-amex" style="color:blue;"></i>
+              		<i class="fa fa-cc-mastercard" style="color:red;"></i>
+              		<i class="fa fa-cc-discover" style="color:orange;"></i>
+            	</div>
+				<br>
+				<label for="cname" style="font-size:18px;"><b>Name on Card</b></label>
+            	<input type="text" id="cname" name="cardname" placeholder="Enter The Name On Card"><br>
+            	<label for="ccnum" style="font-size:18px;"><b>Credit card number</b></label>
+            	<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+				<label for="expmonth" style="font-size:18px;"><b>Exp Month</b></label>
+            	<input type="text" id="expmonth" name="expmonth" placeholder="September"><br>
+				<label for="expyear" style="font-size:18px;"><b>Exp Year</b></label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+        		<label>
+					<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        		</label>
+				<a href="http://127.0.0.1:8000/head/">
+        			<input type="submit" value="PROCEED TO PAY" class="btn">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="Upi" class="tabcontent" style="background:powderblue;height:410px;">
+		<br>
+		<label for="upid" style="font-size:24px;color:navy;"><b>Enter Your UPI ID</b></label><br><br>
+		<input type="password" id="upid" name="upi" placeholder="UPI ID...." style="width:310px;height:45px;"><br><br>
+		<a href="http://127.0.0.1:8000/head/">
+			<input type="submit" value="VERIFY AND PAY" class="btn" style="width:310px;height:45px;"><br><br>
+		</a>
+			<h3 style="color:black;">How UPI Works?</h3>
+			<ul style="color:midnightblue;">
+				<li> Open UPI linked app on your device or tap on the notification received for the same in SMS </li><br>
+				<li>Check the collect request from Tierra EShop in pending transactions in linked UPI app</li><br>
+				<li> Complete the payment by accepting the request and entering UPI pin</li><br>
+			</ul>
+	</div>
+	<div id="Net" class="tabcontent" style="background:powderblue;">
+		<h1 style="color:navy;"><b>Select Your Bank</b></h1><br>
+		<div class="row">
+			<div class="column">
+				<a href="https://www.sbiyono.sbi/wps/portal/login">
+					<img src="{% static 'images/sbi.png' %}" style="width:100px;height:100px;"><br>
+					<label style="font-size:30px;color:navy;padding:10px 20px;"><b>SBI</b></label>
+				</a>
+			</div>
+			<div class="column">
+				<a href="https://homepageut.hdfcbank.com/assets/popuppages/netbanking.htm">
+					<img src="{% static 'images/hdfc.png' %}" style="width:100px;height:100px;">
+					<label style="font-size:30px;color:navy;padding:10px 15px;"><b>HDFC</b></label>
+				</a>
+			</div>
+			<div class="column">
+				<a href="https://www.icicibank.com/nri-banking/pay-view-online-quick.page">
+					<img src="{% static 'images/icic.png' %}" style="width:100px;height:100px;">
+					<label style="font-size:30px;color:navy;padding:10px 20px;"><b>ICIC</b></label>
+				</a>
+			</div>
+			<div class="column">
+				<a href="https://retail.axisbank.co.in/wps/portal/rBanking/axisebanking/AxisRetailLogin/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOKNAzxMjIwNjLwsQp0MDBw9PUOd3HwdDQwMjIEKIoEKDHAARwNC-sP1o_ArMYIqwGNFQW6EQaajoiIAVNL82A!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/">
+					<img src="{% static 'images/axix.png' %}" style="width:100px;height:100px;">
+					<label style="font-size:30px;color:navy;padding:10px 20px;"><b>AXIS</b></label>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="Cash" class="tabcontent" style="background:powderblue;height:530px;">
+		<br>
+		<h3 style="color:navy;">PAY ON DELIVERY</h3>
+		<p style="color:black;">
+			Pay on Delivery (POD) includes Cash on Delivery (COD) and additional digital payment facilities at your doorstep.You can pay for <b>Pay on Delivery</b> orders by
+			cash at all locations and by card in selected locations.<br><br>
+			<b style="color:navy;">To pay using card swipe machine/mPOS:</b>
+		<ol>
+			<li>Ask your delivery agent for a card swipe machine.</li>
+			<li>Swipe/insert your card.</li>
+			<li>Enter your card ATM PIN to complete the payment.</li>
+			<li>After posting the successful payment, you'll get a confirmation message.</li>
+		</ol><br>
+			<b style="color:navy;"> To pay using Our Pay link:</b>
+		<ol>
+			<br>
+			<li>Ask your delivery agent for a Pay link SMS on your smartphone that has internet connectivity.</li>
+			<li>Select the link in the SMS and initiate payment.</li>
+			<li>Select your payment method and complete payment using your credentials.</li>
+			<li>After posting the successful payment, you'll get a confirmation message.</li>
+		</ol>
+		</p>
+		<center>
+			<a href="http://127.0.0.1:8000/head/">
+				<input type="submit" value="CONTINUE" class="btn" style="width:310px;height:45px;"><br><br>
+			</a>
+		</center>
+	</div>
+	<div class="clearfix"></div>
+<!--/ End -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr style="background-color:black;height:2px;">
+<!-- Footer Top -->
+<footer class="footer" style="font-size:20px;color:white;">
+	<div class="footer-top section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer about">
+						<div class="logo">
+							<img src="{% static 'images/log.jpg' %}" alt="#" width="300px" height="80px">
+						</div><br><br>
+						<p class="call">Got Question?  Call us 24/7 <span><a href="tel:123456789"> +0123 456 789</a></span></p>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4>Information</h4>
+						<a href="#">About Us</a>
+						<a href="#">Faq</a>
+						<a href="#">Terms & Conditions</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Help</a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4>Customer Service</h4>
+						<a href="#">Payment Methods</a>
+						<a href="#">Money-back</a>
+						<a href="#">Returns</a>
+						<a href="#">Shipping</a>
+						<a href="#">Privacy Policy</a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer social">
+						<h4>Get In Touch</h4>
+						<!-- Single Widget -->
+						<div class="contact">
+							Kozhikode.
+							Kerala,India
+							info@tierraeshop.com<br>
+							+911 2345 6789
+						</div>
+						<!-- End Single Widget -->
+						<a href="#"><i class="ti-facebook"></i></a>
+						<a href="#" ><i style="text-indent:3em;" class="ti-twitter"></i></a>
+						<a href="#"><i class="ti-instagram"></i></a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Top -->
+	<div class="copyright">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="left">
+							<p>Copyright © 2020 <a href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="right">
+							<img src="{% static 'images/payments.png' %}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>

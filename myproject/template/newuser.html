@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tierra EShop</title>
+     {% load static %}
+    <link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="{% static '/css/user.css' %}" rel="stylesheet">
+    <link href="{% static '/css/newuser.css' %}" rel="stylesheet">
+</head>
+<body style="background-image:url('{% static 'images/ne.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+<h1 style="text-shadow: 2px 2px black;color:deeppink;font-size:60px;font-family:Sofia,sans-serif;margin-top: 10px;margin-left: 20px;"><b>Complete Your Sign Up</b></h1>
+<div style="color:#000329;font-size:25px;padding-left:25px;">
+    <form method="POST" class="post-form">
+        <b>{% csrf_token %}
+            {{ form.as_p }}</b>
+        <button type="submit" class="btn">Create NewUser</button>
+    </form>
+</div>
+</body>
+</html>

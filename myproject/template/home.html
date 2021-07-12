@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tierra Eshop</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/home.css' %}">
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<style>
+		body
+			{
+				background-image:url('{% static 'images/home3.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;
+			}
+	</style>
+</head>
+<body>
+<div>
+	<h1 style="text-shadow: 5px 2px black;color:hotpink;font-size:99px;font-family:Sofia,sans-serif;margin-top: 10px;margin-left: 40px;"><b>Tierra EShop</b></h1>
+</div>
+<div class="card" style="margin-left: 40px;margin-top:5px;line-height:15px;" >
+	<form class="form-inline" role="form" action="" method="post">
+		{% csrf_token %}
+		<div class="input-container">
+			<i class="fa fa-user icon"></i>
+			<input class="input-field" type="text" placeholder="Enter User Name..." name="username">
+		</div>
+		<div class="input-container">
+			<i class="fa fa-key icon"></i>
+			<input class="input-field" type="password" placeholder="Enter Your Password..." name="password">
+		</div>
+		{% if error %}
+		<div class="alert" STYLE="COLOR:black;FONT-SIZE:19PX;" role="alert">
+			<b>{{ error }}</b>
+		</div>
+		{% endif %}
+		<br>
+		<button type="submit" class="btn" style="font-size:20px;color:navy;"><b>Login</b></button><br>
+		<br>
+	</form>
+	<br>
+	<a href="http://127.0.0.1:8000/user/">
+		<button type="submit" class="btn" style="background-color:steelblue;color:navy;font-size:30px;"><b>Create New Account</b></button>
+	</a>
+</div>
+</body>
+</html>

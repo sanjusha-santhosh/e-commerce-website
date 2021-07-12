@@ -1,0 +1,20 @@
+.btn
+            {
+                background-color:deepskyblue;
+                color: navy;
+                padding: 15px 20px;
+                border: none;
+                cursor: pointer;
+                width: 34%;
+                opacity: 0.9;
+                border-radius: 12px;
+                font-size:20px;
+                font-weight: 800;
+            }
+
+
+        .btn:hover
+            {
+                opacity: 1;
+                background-color: dodgerblue ;
+            }

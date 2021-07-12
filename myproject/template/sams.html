@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<!-- Title Tag  -->
+	<title>Tierra Eshop</title>
+	{% load static %}
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="{% static 'images/logoblack1.jpg' %}" >
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- StyleSheet -->
+	<!-- Flip Card -->
+	<link rel="stylesheet" href="{% static 'css/flip.css' %}">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header shop" >
+	<!-- Topbar -->
+	<div class="middle-inner" style="background-image:url('{% static 'images/sw.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-12">
+					<!-- Logo -->
+					<div class="logo">
+						<img src="{% static 'images/logoblack1.jpg' %}" alt="logo" style=" position: absolute; top: 0px;left:250px;width:95px;height:80px;">
+					</div>
+					<!--/ End Logo -->
+				</div>
+				<div class="logo" ><center><h1 style="position: absolute; top: 18px;right:400px;text-shadow: 2px 2px black;color:deeppink;font-size:70px;text-indent:0.5em; font-family:Sofia,sans-serif;"><b>Tierra EShop</b></h1></center></div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<div class="right-bar" >
+						<br><br>
+						<div class="sinlge-bar" >
+							<a href="http://127.0.0.1:8000/" class="single-icon" style="position: absolute; top: 1px;left:600px;color:red;"><i class="fa fa-user-circle-o" style="font-size:48px;color:navy;"></i></a>
+						</div>
+						<div class="sinlge-bar shopping" >
+							<a href="http://127.0.0.1:8000/cart/" class="single-icon" style="position: absolute; top: 1px;left:700px;"><i class="fa fa-shopping-cart" style="font-size:48px;color:navy;"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<!-- Header Inner -->
+	<div class="header-inner" style="background:#000536;">
+		<div class="container">
+			<div class="cat-nav-head" >
+				<div class="row">
+					<div class="col-12">
+						<div class="menu-area" >
+							<!-- Main Menu -->
+							<nav class="navbar navbar-expand-lg" >
+								<div class="navbar-collapse">
+									<div class="nav-inner">
+										<ul class="nav main-menu menu navbar-nav">
+											<li ><a href="http://127.0.0.1:8000/main/">All Categories</a></li>
+											<li><a href="http://127.0.0.1:8000/ofr/">Offer Zone</a></li>
+											<li class="active"><a href="http://127.0.0.1:8000/mobile/">Mobile<span class="new">New</span></a>
+											</li>
+											<li><a href="">Clothing<span class="new">New</span></a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/men/">Men</a></li>
+													<li><a href="http://127.0.0.1:8000/women/">Women</a></li>
+													<li><a href="http://127.0.0.1:8000/kids/">Kids</a></li>
+													<li><a href="http://127.0.0.1:8000/fash/">All</a></li>
+												</ul>
+											</li>
+											<li><a href="">Electronics</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/lap/">Laptops</a></li>
+													<li><a href="http://127.0.0.1:8000/wat/">Watches</a></li>
+													<li><a href="http://127.0.0.1:8000/hd/">Headphones</a></li>
+													<li><a href="http://127.0.0.1:8000/ear/">Earbuds</a></li>
+												</ul>
+											</li>
+											<li><a href="">Appliances</a>
+												<ul class="dropdown">
+													<li><a href="http://127.0.0.1:8000/tv/">Television</a></li>
+													<li><a href="http://127.0.0.1:8000/ac/">Air Conditioners </a></li>
+													<li><a href="http://127.0.0.1:8000/rf/">Refrigerators</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+<!--/ Body -->
+<div style="background-image:url('{% static 'images/sw.jpg' %}');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+	<center>
+		<h2 style="color:hotpink;text-shadow: 2px 2px black;"><b><i>Buy Your Dream SmartPhone Now &#10084;</i></b></h2>
+	</center>
+	<hr color="black">
+	<!-- Card one -->
+	<div class="row">
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">64GB Storage 16.26 cm (6.4 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">64MP + 8MP + 5MP | 32MP Front Camera.</p>
+								<p style="color:midnightblue;">6000 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Exynos 9611 Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy F41</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 16,499</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyF41" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t1 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/g.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">256GB Storage 17.53 cm (6.9 inch) Quad HD+ Display.</p>
+								<p style="color:midnightblue;">108MP + 12MP + 12MP | 10MP Front Camera.</p>
+								<p style="color:midnightblue;">4500 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Exynos Octa Core Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG GalaxyNote20Ultra </b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 1,04,999</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyNote20Ultra" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t2 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm2.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 17.02 cm (6.7 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">12MP + 12MP + 12MP | 32MP Front Camera.</p>
+								<p style="color:midnightblue;">4500 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Exynos 9810 Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG GalaxyNote10 Lite</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 36,999 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyNote10Lite" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t3 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm3.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">64GB Storage 16.26 cm (6.4 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">64MP + 8MP + 5MP + 5MP | 32MP Front Camera .</p>
+								<p style="color:midnightblue;">6000 mAh Battery.</p>
+								<p style="color:midnightblue;">Samsung Exynos 9 Octa 9611 Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy M31 </b></h5>
+				<h4 style="color:green;"><b>Price:  ₹ 15,345 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyM31" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t4 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- Card One End-->
+	<!-- Card 2 -->
+	<div class="row">
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm4.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 17.02 cm (6.7 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">64MP + 12MP + 5MP + 5MP | 32MP Front Camera .</p>
+								<p style="color:midnightblue;">7000 mAh Lithium-ion Battery .</p>
+								<p style="color:midnightblue;">Exynos 9825 Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy F62</b></h5>
+				<h4 style="color:green;"><b>Price:	₹ 23,999</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyF62" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t5 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm5.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">64GB Storage 16.51 cm (6.5 inch) HD+ Display.</p>
+								<p style="color:midnightblue;">48MP + 5MP + 2MP + 2MP | 8MP Front Camera.</p>
+								<p style="color:midnightblue;">5000 mAh Battery.</p>
+								<p style="color:midnightblue;">Mediatek Helio P35 (MT6765) Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy A12 </b> </h5>
+				<h4 style="color:green;"><b>Price: ₹ 12,999</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyA12" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t6 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm6.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">64GB Storage 16.51 cm (6.5 inch) HD+ Display.</p>
+								<p style="color:midnightblue;">48MP + 8MP + 2MP + 2MP | 13MP Front Camera5000 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">5000 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Exynos 850 Octa Core Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy A21s</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 12,999 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyA12s" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t7 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm7.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">128GB Storage 17.02 cm (6.7 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">64MP + 12MP + 8MP + 5MP | 32MP Front Camera.</p>
+								<p style="color:midnightblue;">5000 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Qualcomm Snapdragon 720G Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy A72 </b></h5>
+				<h4 style="color:green;"><b>Price:  ₹ 34,999 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyA72" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t8 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+<!-- Card 2 end -->
+<!-- Card 3 -->
+	<div class="row">
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm8.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">128 GB Storage 16.26 cm (6.4 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">64MP Rear Camera .</p>
+								<p style="color:midnightblue;">5000 mAh Battery.</p>
+								<p style="color:midnightblue;">Qualcomm Snapdragon 720G Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy A32 </b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 21,999</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyA32" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t9 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm9.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">32GB Storage 14.48 cm (5.7 inch) HD+ Display.</p>
+								<p style="color:midnightblue;">13MP + 2MP | 5MP Front Camera.</p>
+								<p style="color:midnightblue;">4000 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Qualcomm Snapdragon (SDM439) Octa Core Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy M01 </b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 7,823</b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyM01" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t10 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm10.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">64GB Storage 16.26 cm (6.4 inch) Full HD+ Display.</p>
+								<p style="color:midnightblue;">48MP + 8MP + 5MP | 20MP Front Camera.</p>
+								<p style="color:midnightblue;">6000 mAh Battery.</p>
+								<p style="color:midnightblue;">Exynos 9611-Octa Core processor Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy M21</b></h5>
+				<h4 style="color:green;"><b>Price: ₹ 14,799 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+						<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyM21" style="margin-left:30px;width:35px;height:18px;">
+						<label for="sams">  Quantity   :</label>
+						<input type="number" min="1"  name="quantity" style="width:130px;height:20px;"><br><br>
+					</div>
+					<div style="color:#241571;font-size:19px;"><b> {{ t11 }}</b></div>
+					<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+					<br><br>
+					<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="height:550px;width:300px;">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<center>
+								<img  src="{% static 'images/samm11.png' %}" class="center" alt="Avatar" width="180px" height="300px">
+							</center>
+						</div>
+						<div class="flip-card-back" style="margin-left:5px;background:white;"><br>
+							<b><p style="color:midnightblue;">64GB Storage 16.26 cm (6.4 inch) HD+ Display.</p>
+								<p style="color:midnightblue;">13MP + 5MP + 2MP | 8MP Front Camera.</p>
+								<p style="color:midnightblue;">5000 mAh Lithium-ion Battery.</p>
+								<p style="color:midnightblue;">Qualcomm Snapdragon (SDM450-F01) Octa Core Processor.</p>
+							</b>
+						</div>
+					</div>
+				</div>
+				<h5 style="color:darkmagenta;"><b>SAMSUNG Galaxy M11 </b></h5>
+				<h4 style="color:green;"><b>Price:  ₹ 11,000 </b></h4>
+				<form role="form" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row">
+					<input type="checkbox" id="sams" name="sams" value="SAMSUNGGalaxyM11" style="margin-left:30px;width:35px;height:18px;">
+					<label for="sams">  Quantity   :</label>
+					<input type="number"  min="1" name="quantity"  style="width:130px;height:20px;"><br><br>
+				</div>
+				<div style="color:#241571;font-size:19px;"><b> {{ t12 }}</b></div>
+				<button class="btn" value="cart" name="b" style="background-color:#039be5;width:220px;color:white;height:30px;"> <i class="fa fa-shopping-cart" style="font-size:20px;"><b> ADD TO CART</b></i></button>
+				<br><br>
+				<button class="btn" name="b" value="buy" style="background-color:#00695c;width:220px;color:white;height:30px;"> <i class="fa fa-inr" style="font-size:20px;"><b> BUY NOW</b></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Card 3 end -->
+
+<hr style="background-color:white;">
+<!-- Footer Top -->
+<footer class="footer" style="color:white;">
+	<div class="footer-top section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer about">
+						<div class="logo">
+							<img src="{% static 'images/log.jpg' %}" alt="#" width="300px" height="80px">
+						</div><br><br>
+						<p class="call">Got Question?  Call us 24/7 <span><a href="tel:123456789"> +0123 456 789</a></span></p>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4>Information</h4>
+						<a href="#">About Us</a>
+						<a href="#">Faq</a>
+						<a href="#">Terms & Conditions</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Help</a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-2 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer links">
+						<h4>Customer Service</h4>
+						<a href="#">Payment Methods</a>
+						<a href="#">Money-back</a>
+						<a href="#">Returns</a>
+						<a href="#">Shipping</a>
+						<a href="#">Privacy Policy</a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Single Widget -->
+					<div class="single-footer social">
+						<h4>Get In Touch</h4>
+						<!-- Single Widget -->
+						<div class="contact">
+							Kozhikode.
+							Kerala,India
+							info@tierraeshop.com<br>
+							+911 2345 6789
+						</div>
+						<!-- End Single Widget -->
+						<a href="#"><i class="ti-facebook"></i></a>
+						<a href="#" ><i style="text-indent:3em;" class="ti-twitter"></i></a>
+						<a href="#"><i class="ti-instagram"></i></a>
+					</div>
+					<!-- End Single Widget -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Top -->
+	<div class="copyright">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="left">
+							<p>Copyright © 2020 <a href="http://www.tierraeshopp.com" target="_blank">TierraEshop</a>  -  All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="right">
+							<img src="{% static 'images/payments.png' %}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>
